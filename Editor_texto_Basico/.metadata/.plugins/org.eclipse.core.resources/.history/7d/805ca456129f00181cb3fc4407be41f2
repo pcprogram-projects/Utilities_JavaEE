@@ -1,0 +1,14 @@
+package Vista;
+
+import javax.swing.JPanel;
+
+public class PanelAcciones extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public PanelAcciones() {
+
+	}
+
+}

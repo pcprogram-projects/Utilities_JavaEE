@@ -1,0 +1,16 @@
+package com.Browser;
+
+import javax.swing.*;
+
+
+import chrriis.dj.nativeswing.swtimpl.components.*; 
+import chrriis.dj.nativeswing.swtimpl.*;
+class Navegador extends JFrame {
+	JPanel panelBrowser=new JPanel();
+	final JWebBrowser navegador =new JWebBrowser();
+	panelBrowser.add(navegador);
+	public static void main(String[] args) {
+		
+	}
+
+}

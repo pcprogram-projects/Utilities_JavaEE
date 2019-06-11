@@ -1,0 +1,39 @@
+package com.Browser;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
+
+import chrriis.dj.nativeswing.swtimpl.NativeInterface;
+import chrriis.dj.nativeswing.swtimpl.components.JWebBrowser;
+
+public class Navegador extends JFrame {
+
+	public Navegador() {
+		JPanel panelBrowser = new JPanel();
+		panelBrowser.setLayout(new BorderLayout());
+		final JWebBrowser navegador = new JWebBrowser();
+		navegador.navigate("Http://www.goolge.com.mx");
+		panelBrowser.add(navegador);
+		add(panelBrowser);
+
+	}
+
+	public static void main(String[] args) {
+		NativeInterface.open();
+		
+		SwingUtilities.invokeLater(new Runnable() {
+
+			@Override
+			public void run() {
+				Navegador nav = new Navegador();
+				nav.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				nav.setVisible(true);
+            
+			}
+		});
+	}
+
+}

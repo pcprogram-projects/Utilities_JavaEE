@@ -1,0 +1,32 @@
+package Vista;
+
+import javax.swing.JPanel;
+import java.awt.GridLayout;
+import javax.swing.JButton;
+import javax.swing.border.BevelBorder;
+
+public class PanelAcciones extends JPanel {
+	private JButton btnAbrir;
+	private JButton btnCrear;
+	private JButton btnGuardar;
+
+	/**
+	 * Create the panel.
+	 */
+	public PanelAcciones() {
+		setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
+		setLayout(new GridLayout(1, 0, 0, 0));
+		
+		btnAbrir = new JButton("Abrir Archivo");
+		add(btnAbrir);
+		
+		btnCrear = new JButton("Crear Archivo");
+		add(btnCrear);
+		
+		btnGuardar = new JButton("Guardar Archivo");
+		add(btnGuardar);
+
+	}
+
+
+}

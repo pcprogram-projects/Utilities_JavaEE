@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands>
+	<addCategory
+		id="category_1534176552993"
+		name="Custom"
+		description="Container for custom components"
+		visible="true"
+		open="true"/>
+	<addComponent
+		id="custom_1534176552992"
+		name="PanelAcciones"
+		description="Creates Vista.PanelAcciones component."
+		visible="true"
+		class="Vista.PanelAcciones"
+		category="category_1534176552993"/>
+	<addComponent
+		id="custom_1534176577396"
+		name="PanelEdicion"
+		description="Creates Vista.PanelEdicion component."
+		visible="true"
+		class="Vista.PanelEdicion"
+		category="category_1534176552993"/>
+</commands>
